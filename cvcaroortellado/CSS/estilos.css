@@ -1,0 +1,359 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1e5f1;
+    color: #000000;
+    font-family: 'Manjari', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+
+.title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    background-image: url(/IMG/images.jpg);
+    color: white;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    grid-template-columns: repeat(5, 1fr);
+   
+}
+
+.container .header h1 {
+    font-size: 25px;
+    background-image: url(/IMG/images.jpg);
+    text-align: center;
+    
+}
+.container.header, .container.content, .container.sidebar, .container.div {
+    background: #fff;
+    padding: 20px;
+    border: 5px solid #000000;
+}
+
+.container .header {
+    grid-column: 1/-1;
+    background-color: #1e272e;
+    color: #ffffff;
+}
+
+.container .content {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.content .article {
+    background:white;
+    padding: 20px;
+    margin-top: 5px;
+   
+}
+.content .article .perfil__titulo{
+    font-size: 25px;
+    text: bold;
+}
+/* aquí comenzamos a dieñar el perfil*/
+.perfil__txt h6 {
+    font-size: 17px;
+}   
+
+/*Diseño de las habilidades*/
+.skills {
+    max-width: 980px;
+}
+
+.skills-title  {
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.skills-skill {
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+}
+
+.skills-skill:hover {
+    background-color: mediumpurple;
+    transition: 0.3s;
+}
+.skills-list {
+   padding: 0;
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+
+
+.content .article h1,
+.content .article p {
+    padding: 10px;
+}
+/*Diseño de la seccón de estudios*/
+.estudios__titulo {
+    font-size: 1.56em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.44rem;
+    transform: translateX(40%);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.estudios__titulo i {
+    font-size: 1.56em;
+}
+
+.estudios__años {
+    font-weight: bold;
+    padding-right: 0.94em;
+ }
+ 
+ .estudios__info table {
+     font-size: 1.06em;
+ }
+ 
+ .estudios__info td {
+     padding-bottom: 0.13em;
+ }
+
+ /*Diseño de Experiencia*/
+ .experiencia__titulo {
+    font-size: 1.56em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.44rem;
+    transform: translateX(40%);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.experiencia__titulo i {
+    font-size: 1.56em;
+}
+
+.años__laborales{
+   font-weight: bold;
+   padding-right: 0.94em;
+}
+
+.experiencia__info table {
+    font-size: 1.06em;
+}
+
+.experencia__info td {
+    padding-bottom: 0.13em;
+}
+.container .sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: white;
+    
+    display: grid;
+    align-items:left;
+    justify-content: center;
+}
+/*Diseño de barra lateral*/
+.container .sidebar {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*Diseño de Datos Personales**/
+.aside__title {
+    margin-bottom: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    transform: translateX(10px);
+}
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+
+  .tag {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: justify;
+    padding: 60px;
+    color: crimson;
+
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 80%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+    
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+  
+  
+  .contact {
+    margin-block-end: 10em;
+  }
+  
+  .info__li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    justify-content: center;
+    
+
+}
+
+.info__icono i {
+    color:black;
+    font-size: 1.29em;
+    margin-right: 0.63em;
+    align-items: center;
+}
+/*Diseño de social bar flotante*/
+.rrss {
+    position: fixed;
+    bottom: 2rem;
+    left: 70%;
+    transform: translateX(-10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.rrss__txt h3{
+    color: black;
+    padding: .4rem 1rem .25rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: inset;
+}
+
+.rrss__iconos {
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 10px;
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+.rrss__iconos a {
+    color:white;
+    font-size: 2.5rem;
+    transition: 3s all ease-in-out;
+}
+
+.rrss__iconos a:hover {
+    color: #00ff15;
+    transform: scale(1.2);
+}
+
+.rrss__iconos a:nth-child(3) i {
+    font-size: 2.1rem;
+}
+
+
+/* MEDIA QUERIES */
+/*media queries para pantallas pequeñas*/
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    
+    .estudios__titulo {
+        transform: translateX(20%);
+       
+    }
+
+    .experiencia__titulo {
+       
+        transform: translateX(20%);
+      
+    }
+    
+    
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+
+    .skills-skill {
+        text-align: center;
+        cursor: pointer;
+    }
+   
+    
+
+    .rrss {
+       
+        left: 50%;
+       
+    }
+
+    .rrss__iconos {
+       
+        gap: 1.5rem;
+        padding: 7px;
+        width: 80%;
+        border-radius: 1.2rem;
+    }
+    
+}
+
